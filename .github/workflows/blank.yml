@@ -8,7 +8,7 @@ jobs:
   runs-on: ubuntu-latest
   steps:
      - name: Clone yashu901/tutorial PUBLIC repository
-       uses: yashu901/clone-github-repo-action@v2.1
+       uses: actions/checkout@v4
        with:
         depth: 1
         branch: 'main'
