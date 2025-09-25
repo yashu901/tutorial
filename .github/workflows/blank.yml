@@ -5,7 +5,7 @@ on:
  
 jobs: 
  build:
-  runs-on: ubuntu_latest
+  runs-on: ubuntu-latest
   steps:
      - name: Clone yashu901/tutorial PUBLIC repository
        uses: yashu901/clone-github-repo-action@v2.1
