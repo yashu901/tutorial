@@ -4,12 +4,17 @@ on:
  workflow_dispatch:
  
 jobs: 
- clone:
+ build:
   runs-on: ubuntu-latest
   steps:
   
-     - name: Checkout my repository
-       uses: actions/checkout@v4
+     - name: Clone yashu901/tutorial PUBLIC repository
+       uses: yashu901/clone-github-repo-action@v2.1
+       with:
+             depth: 1
+             branch: 'main'
+             owner: 'yashu901'
+             repository: 'tutorial'
  
      - name: List files
        run: ls 
