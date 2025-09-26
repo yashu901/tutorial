@@ -15,4 +15,4 @@ jobs:
              ref: main
  
      - name: List files
-       run: ls 
+       run: ls -lr
