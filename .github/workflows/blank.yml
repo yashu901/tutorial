@@ -22,3 +22,10 @@ jobs:
        with:
           username: yashu901
           password: ${{ secrets.DOCKERHUB }}
+
+     - name: Build Docker image
+       run: |
+             docker build -t yashu901/tutorial:latest .
+             docker tag yashu901/tutorial:latest 
+             
+
